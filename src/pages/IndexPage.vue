@@ -237,3 +237,67 @@ export default {
 }
 
 </script>
+<style>
+.doneinput{
+  /* height: 30px; */
+}
+.progress{
+  width:100%;
+  border-radius: 4px;
+  color:#4EFDEA;
+  background: #d5d7f0;
+
+}
+.progress1{
+  width:100%;
+  border-radius: 4px;
+  color:#4EFDEA;
+  background: #e2f5f3;
+}
+.reserve{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000034;
+}
+.card-add{
+  width:45%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+
+}
+.q-dialog__inner > div {
+  border-radius: 24px;
+}
+.highlight{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  min-width:130px;
+  height: 65%;
+  text-align: center;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000034;
+  background: #EFF0F5;
+  border-radius: 16px;
+}
+.tr-pro{
+  height: 90px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  /* Dark/dark_1 */
+
+  color: #000034;
+}
+</style>
