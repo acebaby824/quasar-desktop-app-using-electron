@@ -479,4 +479,140 @@ color: #4B4E68;
     /* background: radial-gradient(black, transparent); */
     background: linear-gradient(90deg, #4EFDEA 6.67%, #5766FF 92.08%);
 }
+.Next{
+  color:blue;
+  display: inline-block;
+  align-content: center;
+  width: 40%;
+  min-width: 85px;
+  height: 60%;
+  text-align: center;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  background: rgba(119, 130, 241, 0.1);
+  border-radius: 16px;
+  bottom:30px;
+}
+.q-btn:before{
+  box-shadow:none;
+}
+.addmidsify{
+  margin-top: 50px;
+  margin-right: 0px;
+  width: 100px;
+  border-radius: 10px;
+}
+.modal-icon{
+  position: relative;
+  right: 50px;
+}
+.card-next{
+  position: relative;
+  bottom: 0px;
+  width: 100px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4EFDEA 6.67%, #7581FF 92.08%);
+  border-radius: 9px;
+}
+.my-table-details {
+  font-size: 0.85em;
+  font-style: italic;
+  max-width: 200px;
+  white-space: normal;
+  color: #555;
+  margin-top: 4px;
+}
+
+.search{
+  background-color: #F3F3F5;
+  margin: 20px 0px 20px;
+  width: 362px;
+  height: 48px;
+  border-radius: 5px;
+}
+.cursor-pointer{
+  height: 30px;
+}
+.cross-icon{
+  color:blue !important;
+  font-size: large;
+}
+.q-table .sortable{
+  font-size: 20px;
+  padding-left: 25px;
+}
+.tooltip .tooltiptext {
+  margin-top: 100px;
+  min-width: 70px;
+  background-color: white;
+  box-shadow: 0px 15px 40px rgba(22, 8, 49, 0.1);
+  border-color:rgb(230, 58, 58);
+  margin-top: 5px;
+  color: #4B4E68;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 20px 8px 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 70%;
+  left: v-bind(progressLabel1);
+  margin-left: -9%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #84849A;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 15px 40px rgba(22, 8, 49, 0.1);
+  display: inline-block;
+}
+</style>
+<style lang="sass">
+.my-sticky-virtscroll-table
+  /* height or max-height is important */
+  height: 410px
+
+  .q-table__top,
+  .q-table__bottom,
+  thead tr:first-child th /* bg color is important for th; just specify one */
+    background-color: #4EFDEA
+
+  thead tr th
+    position: sticky
+    z-index: 1
+  /* this will be the loading indicator */
+  thead tr:last-child th
+    /* height of all previous header rows */
+    top: 48px
+  thead tr:first-child th
+    top: 0
+
+  /* prevent scrolling behind sticky top row on focus */
+  tbody
+    /* height of all previous header rows */
+    scroll-margin-top: 48px
 </style>
