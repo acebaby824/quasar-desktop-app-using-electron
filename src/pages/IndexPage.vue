@@ -300,4 +300,183 @@ export default {
 
   color: #000034;
 }
+.mytooltip .mytext {
+  display: flex;
+  align-items: center;
+  visibility: show;
+  width: 140px;
+  /* background-color: blue; */
+  color: #fff;
+  z-index: 1;
+  bottom: 100%;
+  /* left: 33%; */
+  left:v-bind((sumupprogress * 100-28) + '%');
+  /* left:v-bind(sumupprogress*100); */
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 15px 40px rgba(22, 8, 49, 0.1);
+}
+.mytooltip {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: -60%;
+}
+.mytooltip .mytext:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255) transparent transparent transparent;
+}
+.mytooltip:hover .mytext {
+    visibility: visible;
+}
+.pages{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width:1280px;
+}
+.page-content{
+  /* border: solid 2px black; */
+  width: 95%;
+}
+.downspan{
+  font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+
+text-align: center;
+
+/* Dark/dark_2 */
+
+color: #4B4E68;
+
+}
+.progress .bg-white{
+  background:#a4abf1!important;
+}
+.progress1 .bg-white{
+  background:#b8eee8!important;
+}
+.modal-what{
+  width: 100%;
+  /* height: 400px; */
+  border: 1px solid #D6D8EA;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-radius: 16px;
+}
+.sumup-text-up{
+  position:relative;
+  left: 20%;
+  top:10px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #84849A;
+}
+.modal_content{
+  width: 100%;
+  height: 50%;
+  border:10px red
+}
+.sumup-text-down{
+  text-align: center;
+  color: #84849A;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: small;
+  line-height: 18px;
+  color: #4B4E68;
+}
+.q-btn .q-icon, .q-btn .q-spinner{
+    font-size: none;
+}
+.limit-sel{
+  width:20%;
+}
+.rows{
+  display: flex;
+  /* flex-direction: row; */
+}
+.limit-in{
+
+  width:80%;
+  border-right: 1px solid #D6D8EA;
+}
+.bell-notification{
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  /* box-shadow: none; */
+}
+.modal_inner{
+  margin-top: 10%;
+  width: 90%;
+  height: 80%;
+}
+.page-name{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000034;
+  margin-right: 0px;
+}
+.brand{
+  border-radius: 5px;
+  height: 40px;
+  width: 130px;
+  border-color: #F5F5F5;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-right: 0px;
+}
+.q-badge{
+  background-color:#4EFDEA;
+  color:#000034;
+  padding: 5px 7px 2px 5px;
+}
+.sumupprogress{
+  /* padding-right: 85px; */
+  width: 250px;
+  border-radius: 4px;
+  height: 12px;
+}
+.Live{
+  color:red;
+  display: inline-block;
+  /* align-content: center; */
+  width: 40%;
+  min-width: 85px;
+  height: 60%;
+  text-align: center;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  background: rgba(245, 61, 107, 0.1);
+  border-radius: 16px;
+
+}
+.sumupprogress .q-linear-progress__model {
+    /* background: radial-gradient(black, transparent); */
+    background: linear-gradient(90deg, #4EFDEA 6.67%, #5766FF 92.08%);
+}
 </style>
